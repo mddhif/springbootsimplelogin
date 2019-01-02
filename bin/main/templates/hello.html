@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Hello page</title>
+</head>
+<body>
+<h1 th:inline = "text">Hello [[${#httpServletRequest.remoteUser}]]!</h1>
+    
+    <a th:href = "@{/download}">File</a>
+    
+      <form th:action = "@{/logout}" method = "post">
+         <input type = "submit" value = "Sign Out"/>
+      </form>
+</body>
+</html>
